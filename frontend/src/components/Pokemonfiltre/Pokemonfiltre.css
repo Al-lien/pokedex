@@ -1,0 +1,98 @@
+:root {
+  --eau-color: #9db7f5;
+  --acier-color: #d1d1e0;
+  --roche-color: #d1c17d;
+  --psy-color: #f192b2;
+  --poison-color: #c183c1;
+  --normal-color: #c6c6a7;
+
+  --glace-color: #bce6e6;
+  --sol-color: #ebd69d;
+  --plante-color: #a7d88d;
+  --spectre-color: #a292bc;
+  --vol-color: #a890f0;
+  --feu-color: #f5ac78;
+
+  --combat-color: #d67873;
+  --fee-color: #f4bdc9;
+  --electrik-color: #fae078;
+  --dragon-color: #a27dfa;
+  --tenebres-color: #a29288;
+  --insecte-color: #c6d16e;
+}
+
+.display-pokemon {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  width: clamp(375px, 100%, 1440px);
+  height: auto;
+  margin: 0.5em auto;
+  overflow: scroll;
+}
+
+.pokeTypeCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5em auto;
+  width: 11rem;
+  height: 10rem;
+  border-radius: 20px;
+  box-shadow:
+    rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  border-style: hidden;
+}
+
+.pokeTypeCard p {
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
+  filter: drop-shadow(rgba(0, 0, 0, 0.05) 5px 15px 10px);
+}
+
+a {
+  text-decoration: none;
+}
+.pokeTypeCard * {
+  pointer-events: none;
+  border-style: none;
+  border-radius: 10px;
+  cursor: pointer;
+  filter: drop-shadow(rgba(0, 0, 0, 0.05) 5px 15px 10px);
+}
+
+/* les images */
+.pokeType {
+  width: 8rem;
+  aspect-ratio: 1;
+  filter: drop-shadow(rgba(0, 0, 0, 0.25) 0 5px 5px);
+}
+
+@media screen and (min-width: 600px) and (max-width: 750px) {
+  .display-pokemon {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 750px) and (max-width: 1200px) {
+  .display-pokemon {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .display-pokemon {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+    overflow: hidden;
+  }
+}

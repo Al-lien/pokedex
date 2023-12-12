@@ -1,0 +1,21 @@
+@import "../../style/utils";
+
+.primaryNavBar {
+  @include flexboxRow;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1em;
+
+  a {
+    text-decoration: none;
+    color: $fclr-black;
+    font-size: 2rem;
+    border: none;
+    background-color: transparent;
+  }
+
+  .burgerLogo {
+    width: 50px;
+    aspect-ratio: 1;
+  }
+}
