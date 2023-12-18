@@ -54,6 +54,8 @@ $navigationHeight: 10rem;
 
 body {
   height: 100vh;
+  width: 375px;
+  margin-inline: auto;
   background-color: $fclr-white;
   font-family: $ff-primary, $ff-secondary, $ff-default;
   font-weight: $fw-regular;
@@ -62,8 +64,10 @@ body {
 }
 
 #root {
-  width: 100%;
+  width: 375px;
   height: 100%;
+  margin-inline: auto;
+  background-color: white;
 }
 
 @include headings;
@@ -75,7 +79,7 @@ body {
   position: fixed;
   border-radius: 0 0 50px 50px;
   z-index: 99999;
-  width: clamp(375px, 100%, 1440px);
+  width: 375px;
   left: 50%;
   transform: translate(-50%, 0%);
   background-color: $fclr-white;

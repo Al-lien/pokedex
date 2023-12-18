@@ -3,7 +3,7 @@
 .primaryNavBar {
   @include flexboxRow;
   justify-content: space-between;
-  width: 100%;
+  width: 375px;
   padding: 1em;
 
   a {
