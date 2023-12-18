@@ -2,7 +2,7 @@
   "name": "template-fullstack",
   "version": "4.1.0",
   "description": "project template for the React-Express-MySQL cursus in Wild Code School",
-  "homepage": "https://adorable-bubblegum-8f3dec.netlify.app/",
+  "homepage": "https://github.com/Al-lien/pokedex",
   "bugs": {
     "url": "https://github.com/wildcodeschool/js-template-fullstack/issues"
   },
