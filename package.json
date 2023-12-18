@@ -1,8 +1,8 @@
 {
+  "homepage": "https://Al-lien/github.io/pokedex",
   "name": "template-fullstack",
   "version": "4.1.0",
   "description": "project template for the React-Express-MySQL cursus in Wild Code School",
-  "homepage": "https://github.com/wildcodeschool/js-template-fullstack#readme",
   "bugs": {
     "url": "https://github.com/wildcodeschool/js-template-fullstack/issues"
   },
@@ -23,7 +23,8 @@
     "lint": "lint-staged",
     "prebuild": "$npm_package_config_cli install",
     "build": "cross-env-shell \"cd ./frontend && $npm_package_config_cli run build && cd ../backend && $npm_package_config_cli run build\"",
-    "start": "cross-env-shell \"cd ./backend && $npm_package_config_cli run start\""
+    "start": "cross-env-shell \"cd ./backend && $npm_package_config_cli run start\"",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "Wild Code School",
@@ -31,6 +32,7 @@
   "devDependencies": {
     "concurrently": "^8.2.0",
     "cross-env": "^7.0.3",
+    "gh-pages": "^6.1.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.3"
   }
